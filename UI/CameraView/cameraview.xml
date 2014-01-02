@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.fwdus.selfies4reform.CameraView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="@color/clear"
+        >
+        <SurfaceView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/camera_view_camerafeedview"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/clear"
+            >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="60dp" android:background="@color/clear"
+                android:gravity="left">
+                <Button
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Flip"
+                    android:background="#AABBCC"
+                    android:id="@+id/camera_view_flipButton"/>
+                <Button
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:background="#AABB"
+                    android:text="Flash"
+                    android:id="@+id/camera_view_flashToggleButton"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="0.1"
+                android:background="@color/clear">
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="100dp" android:layout_marginBottom="10dp"
+                android:background="@color/clear" android:gravity="center_horizontal">
+                <Button
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:background="@drawable/btn_camera"
+                    android:id="@+id/camera_view_captureButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.fwdus.selfies4reform.CameraView>
